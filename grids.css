@@ -90,6 +90,55 @@
   width: 100%;
 }
 
+@media all and (min-width: 30em) {
+  .wl1 {
+    width: 8.33333%;
+  }
+
+  .wl2 {
+    width: 16.66667%;
+  }
+
+  .wl3 {
+    width: 25%;
+  }
+
+  .wl4 {
+    width: 33.33333%;
+  }
+
+  .wl5 {
+    width: 41.66667%;
+  }
+
+  .wl6 {
+    width: 50%;
+  }
+
+  .wl7 {
+    width: 58.33333%;
+  }
+
+  .wl8 {
+    width: 66.66667%;
+  }
+
+  .wl9 {
+    width: 75%;
+  }
+
+  .wl10 {
+    width: 83.33333%;
+  }
+
+  .wl11 {
+    width: 91.66667%;
+  }
+
+  .wl12 {
+    width: 100%;
+  }
+}
 @media all and (min-width: 46.25em) {
   .wt1 {
     width: 8.33333%;

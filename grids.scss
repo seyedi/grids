@@ -1,6 +1,7 @@
 $grid_num: 12 !default;
 
-$mobile: 30em !default;
+$mobile: 20em !default;
+$mobileLandscape: 30em !default;
 $tablet: 46.25em !default;
 $desktop: 61.25em !default;
 $wide: 81.25em !default;
@@ -8,6 +9,7 @@ $wide: 81.25em !default;
 $gap: 0.01em !default;
 
 $mobile-max: $mobile - $gap;
+$mobileLandscape-max: $mobileLandscape - $gap;
 $tablet-max: $tablet - $gap;
 $desktop-max: $desktop - $gap;
 $wide-max: $wide - $gap;
@@ -72,6 +74,15 @@ $grid_gutter: .5em !default;
 @for $i from 1 through $grid_num {
   .w#{$i} {
     width: grid($i);
+  }
+}
+
+// L for Landscape Mobile screens
+@media all and (min-width: $mobileLandscape) {
+  @for $i from 1 through $grid_num {
+    .wl#{$i} {
+      width: grid($i);
+    }
   }
 }
 
